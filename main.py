@@ -245,7 +245,8 @@ class CVCVApp(ctk.CTk):
                      text_color=TEXT_MUTED, anchor="w").pack(side="left")
         ctk.CTkSwitch(
             tog_row, text="", variable=self._include_y,
-            oncolor=ACCENT, offcolor=BORDER, width=42, height=20
+            button_color=ACCENT, progress_color=ACCENT,
+            button_hover_color="#5b4fd4", width=42, height=20
         ).pack(side="right")
 
         # ── FILTER section ───────────────────────────────────────────────────
